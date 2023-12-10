@@ -1,0 +1,55 @@
+alert(`Se añadió ${producto} al carrito. Precio: $${precio}`);
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tienda de Moda</title>
+<style>
+/* Estilos CSS aquí */
+</style>
+</head>
+<body>
+<header>
+<h1>Tienda de Moda</h1>
+<p>Encuentra las últimas tendencias en moda.</p>
+</header>
+<nav>
+<a href="#">Inicio</a> |
+<a href="#">Catálogo</a> |
+<a href="#">Contacto</a>
+</nav>
+<main>
+<div>
+<h3>Camisa Elegante</h3>
+<img src="ruta/imagen1.jpg" alt="Producto 1">
+<p>Camisa gris brillante, corte slim elegante para variedad de ocasiones.</p>
+<p>Precio: $750.00</p>
+<button onclick="addToCart('Camisa Elegante', 750.00)">Añadir al carrito</button>
+</div>
+<div>
+<h3>Cadena de Oro 18k</h3>
+<img src="ruta/imagen2.jpg" alt="Producto 2">
+<p>Cadena de Oro 18k de 4mm de grosor y una longitud de 120cm con terminación premium.</p>
+<p>Precio: $12000.00</p>
+<button onclick="addToCart('Cadena de Oro 18k', 12000.00)">Añadir al carrito</button>
+</div>
+<div>
+<h3>Zapatos de Lujo (Dama)</h3>
+<img src="ruta/imagen3.jpg" alt="Producto 3">
+<p>Zapatos de lujo para dama adornados con piedritas brillantes de distintos tamaños en color dorado.</p>
+<p>Precio: $2389.00</p>
+<button onclick="addToCart('Zapatos de Lujo (Dama)', 2389.00)">Añadir al carrito</button>
+</div>
+</main>
+<footer>
+<p>&copy; 2023 Tienda de Moda. Todos los derechos reservados. Yair Rojas Gonzalez</p>
+</footer>
+<script>
+function addToCart(producto, precio) {
+alert(`Se añadió ${producto} al carrito. Precio: $${precio}`);
+// Aquí podrías agregar lógica adicional, como enviar datos al servidor o actualizar un carrito de compras en la página.
+}
+</script>
+</body>
+</html>
